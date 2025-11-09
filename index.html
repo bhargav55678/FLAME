@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FLAME Game</title>
+  <link rel="stylesheet" href="flame.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="card">
+      <header class="card-header">
+        <h1>🔥 FLAME Game</h1>
+        <p>Enter two names and find your relationship</p>
+      </header>
+
+      <form id="flameForm" class="form" autocomplete="off">
+        <div class="inputs">
+          <label>
+            <span class="label-text">Name 1</span>
+            <input id="name1" type="text" placeholder="Your name" />
+          </label>
+
+          <label>
+            <span class="label-text">Name 2</span>
+            <input id="name2" type="text" placeholder="Partner's name" />
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button id="calcBtn" type="submit">Check Relationship</button>
+          <button id="resetBtn" type="button" class="muted">Reset</button>
+        </div>
+      </form>
+
+      <section class="result" aria-live="polite">
+        <div id="resultText" class="result-text">Result will appear here</div>
+      </section>
+
+      <footer class="card-footer">
+        <small>Algorithm: Proper FLAMES elimination method</small>
+      </footer>
+    </div>
+  </main>
+
+  <script src="flame.js"></script>
+</body>
+</html>
